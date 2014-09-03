@@ -1,0 +1,32 @@
+.bg {
+	background: url(../img/bible-quiz.jpg) no-repeat;
+	background-size: cover;
+}
+header {
+	background: #fff;
+	height: 50px;
+	;
+	border-bottom: 10px solid maroon;
+}
+.logo {
+	background: url(../img/logo.png);
+	height: 77px;
+	width: 169px;
+	text-align: center;
+	margin: 0 auto;
+}
+.question-container {
+	padding: 80px 20px;
+	margin-top: 100px;
+	text-align: center;
+	border: 1px solid #000;
+	border-radius: 8px;
+	background: #fff;
+}
+
+.padding20{padding:10px 20px;}
+.padding40{padding:10px 40px;}
+.padding60{padding:10px 60px;}
+.btn.margin20{margin:20px 10px;}
+.btn.margin40{margin:40px 10px;}
+.btn.margin60{margin:60px 10px;}
