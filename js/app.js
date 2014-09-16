@@ -74,9 +74,9 @@ $(document).ready(function (e) {
 
             } else {
 
-                //$('#answerData').modal('show');
-                //$('#answerData .modal-info').html("You selected " + userAnswer +
-                //    "... <br> The correct answer is " + questions[questionNum].answer);
+                $('#answerData').modal('show');
+                $('#answerData .modal-info').html("You selected " + userAnswer +
+                    "... <br> The correct answer is " + questions[questionNum].answer);
 
             }
 
