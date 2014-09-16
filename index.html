@@ -1,79 +1,77 @@
-<!doctype html>
+﻿<!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title></title>
-<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body class="bg">
-<header>
-    <div class="container">
-        <div class="row text-center">
-            <div class="col-md-4 question">Question x of x</div>
-            <div class="col-md-4">
-                <div class="logo hidden-sm hidden-xs"></div>
+    <header>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <div class="logo hidden-sm hidden-xs"></div>
+                </div>
+                <div class="col-md-4">
+                    <strong>Your Score:</strong>
+                    <span class="question-score">0</span>
+                </div>
             </div>
-            <div class="col-md-4 score">Score XX</div>
         </div>
-    </div>
-</header>
-<div class="container">
-    <div class="row">
-        <div class="col-md-3"></div>
-        <div class="col-md-6">
-            <div class="question-container">
-                <h3> Test Your Bible Knowledge</h3>
-                <a class="btn btn-default padding40 margin20">START QUIZ</a> </div>
-        </div>
-        <div class="col-md-3"></div>
-    </div>
-    <div class="row">
-        <div class="col-md-3"></div>
-        <div class="col-md-6">
-            <div class="question-container">
-                <h3>How many books are there in the BIble?</h3>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                        Option one is this and that&mdash;be sure to include why it's great </label>
-                    <hr>
-                    <label>
-                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                        Option two is this and that&mdash;be sure to include why it's great </label>
-                    <hr>
-                    <label>
-                        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
-                        Option 3333 is this and that&mdash;be sure to include why it's great </label>
-                    <hr>
-                    <label>
-                        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
-                        Option 3333 is this and that&mdash;be sure to include why it's great </label>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+
+                <div class="layout-container">
+                    <h3 class="title"> Test Your Bible Knowledge</h3>
+                    <a class="btn btn-default btn-start padding40 margin20">START QUIZ</a>
+                    <div class="questions"></div>
+
                 </div>
-                <a class="btn btn-default padding40 margin20">SUBMIT</a> </div>
+            </div>
+            <div class="col-md-3"></div>
         </div>
-        <div class="col-md-3"></div>
-    </div>
-    
-    
-     <div class="row">
-        <div class="col-md-3"></div>
-        <div class="col-md-6">
-            <div class="question-container">
-                <h3> Your Results</h3>
-                <span class="result-stars"></span>
-                <span class="result-message"></span>
-                <span class="result-score"></span>
+        <!--<div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6 questions-list">
+
                 </div>
-        </div>
-        <div class="col-md-3"></div>
+                <div class="col-md-3"></div>
+            </div>-->
+        <!--<div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <div class="layout-container results">
+                        <h3> Your Results</h3>
+                        <span class="result-stars"></span> <span class="result-message"></span> <span class="result-score"></span> </div>
+                </div>
+                <div class="col-md-3"></div>
+            </div>-->
     </div>
-    
-    
-</div>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
-<script src="js/bootstrap.min.js"></script>
+    <div class="modal fade" id="answerData" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false" aria-labelledby="submittingLabel" aria-hidden="true" style="overflow-y: auto; font-size: 19px; text-align: center;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title">Wrong Answer</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-info"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
