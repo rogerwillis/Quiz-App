@@ -35,7 +35,7 @@ $(document).ready(function (e) {
     var smartAssery = {
 
         sa1: "I wouldn't count on being a theologian there buddy.",
-        sa2: "You're ready to preach it yo!",
+        sa2: "Keep on seeking.",
         sa3: "Before the foundation of the world you were predestined to be awesome! You're the next John Calvin. Word!"
 
     }
